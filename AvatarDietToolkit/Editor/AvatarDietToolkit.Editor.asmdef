@@ -1,0 +1,26 @@
+{
+    "name": "AvatarDietToolkit.Editor",
+    "rootNamespace": "AvatarDietToolkit.Editor",
+    "references": [
+        "VRC.SDK3.Avatars",
+        "VRC.SDKBase",
+        "VRC.SDKBase.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.vrchat.avatars",
+            "expression": "3.0.0",
+            "define": "AVATAR_DIET_VRC_SDK_PRESENT"
+        }
+    ],
+    "noEngineReferences": false
+}
