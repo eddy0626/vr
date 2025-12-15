@@ -24,7 +24,8 @@ namespace AvatarDietToolkit.Editor.Analyzers
                 foreach (var p in paramsAsset.parameters)
                 {
                     if (string.IsNullOrEmpty(p.name)) continue;
-                    
+                    if (!p.networkSynced) continue;
+
                     int cost = 0;
                     switch (p.valueType)
                     {

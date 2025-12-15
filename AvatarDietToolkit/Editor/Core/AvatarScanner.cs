@@ -49,7 +49,7 @@ namespace AvatarDietToolkit.Editor.Core
             for (int i = 0; i < _analyzers.Count; i++)
             {
                 var analyzer = _analyzers[i];
-                EditorUtility.DisplayProgressBar("Avatar Diet", $"Analyzing {analyzer.GetType().Name}...", (float)i / _analyzers.Count);
+                EditorUtility.DisplayProgressBar("Avatar Diet", $"Analyzing {analyzer.GetType().Name}...", (float)(i + 1) / _analyzers.Count);
                 try
                 {
                     analyzer.Run(avatarRoot, report);
